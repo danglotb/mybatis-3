@@ -52,6 +52,7 @@ public class PerpetualCacheTest {
     assertNotNull(cache.getObject(0));
     cache.removeObject(0);
     assertNull(cache.getObject(0));
+    assertFalse(cache.equals(new Object()));
   }
 
   @Test
